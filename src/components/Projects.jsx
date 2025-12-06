@@ -1,6 +1,18 @@
 import React from "react";
 import "../styles/Projects.css";
 
+import HTML from "../../stack/HTML.png"
+import Javascript from "../../stack/Javascript.svg";
+import ReactJs from "../../stack/React.png";
+import NodeJs from "../../stack/NodeJs.svg";
+import Tailwind from "../../stack/Tailwind.png";
+import ExpressJs from "../../stack/Express.png";
+import Firebase from "../../stack/firebase.png";
+import Netlify from "../../stack/netlify-logo-png.png";
+import MongoDB from "../../stack/MongoDB.svg";
+import Vercel from "../../stack/Vercel.svg";
+import NextJS from "../../stack/nextjs-original.png";
+
 const Projects = () => {
   const projects = [
     {
@@ -78,18 +90,17 @@ const Projects = () => {
 
   const getSkillImage = (skill) => {
     const skillMap = {
-      HTML: "/stack/HTML.png",
-      CSS: "/stack/CSS.png",
-      Javascript: "/stack/Javascript.svg",
-      Tailwind: "/stack/Tailwind.png",
-      Vercel: "/stack/Vercel.svg",
-      NextJs: "/stack/NextJsCircle.png",
-      MongoDB: "/stack/MongoDB.svg",
-      NodeJs: "/stack/NodeJs.svg",
-      ReactJs: "/stack/React.png",
-      ExpressJs: "/stack/Express.png",
-      Firebase: "/stack/firebase.png",
-      Netlify: "/stack/netlify-logo-png.png",
+      HTML: HTML,
+      Tailwind: Tailwind,
+      Javascript: Javascript,
+      ReactJs: ReactJs,
+      NodeJs: NodeJs,
+      ExpressJs: ExpressJs,
+      Firebase: Firebase,
+      Netlify: Netlify,
+      MongoDB: MongoDB,
+      Vercel: Vercel,
+      NextJs: NextJS,
     };
     return skillMap[skill] || "";
   };
