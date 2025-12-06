@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
 
-import HTML from "../../stack/HTML.png"
+import HTML from "../../stack/HTML.png";
 import Javascript from "../../stack/Javascript.svg";
 import ReactJs from "../../stack/React.png";
 import NodeJs from "../../stack/NodeJs.svg";
@@ -20,7 +20,7 @@ const Projects = () => {
       number: "01",
       title: "Flixo Cart - Online Shopping",
       description:
-        "Flixo cart is A modern, responsive e-commerce web application built with Next.js (app router) this project demonstrates a polished UI, protected pages with authentication, and a simple Express.js backend for product management.",
+        "Flixo Cart is a responsive e-commerce app built with Next.js, featuring a polished UI, authentication-protected pages, and a simple Express.js backend for product management.",
       skills: [
         "HTML",
         "Tailwind",
@@ -40,7 +40,7 @@ const Projects = () => {
       number: "02",
       title: "Utility Bills Management System",
       description:
-        "The Utility Bill Management System is a MERN stack web application that allows users to view, manage, and pay monthly utility bills such as Electricity, Gas, Water, and Internet. Users can securely log in, pay only current month bills, and update their payment information. The system also provides a responsive UI, search and filter functionalities, and the ability to download PDF reports of paid bills.",
+        "The Utility Bill Management System is a MERN app for managing and paying monthly bills (Electricity, Gas, Water, Internet) with secure login, current-month payments, search & filter, and PDF report download.",
       skills: [
         "HTML",
         "Tailwind",
@@ -62,7 +62,7 @@ const Projects = () => {
       number: "03",
       title: "Kiddy Toy Store ",
       description:
-        "KiddyToy Store is an educational & kid-friendly online toy marketplace built using React, Firebase Authentication, Tailwind CSS, and Context API. Users can register, explore toys, add toys, update their own toys, and manage them securely with protected routes",
+        "KiddyToy Store is a kid-friendly online toy marketplace built with React, Firebase, Tailwind, and Context API. Users can register, explore, add, and manage toys securely.",
       skills: [
         "HTML",
         "Tailwind",
@@ -80,7 +80,7 @@ const Projects = () => {
       number: "04",
       title: "Hero Apps Store",
       description:
-        "Hero App is a modern, intuitive application designed to boost productivity and streamline daily tasks. Featuring a sleek UI, seamless navigation, and robust functionality, the app enables users to efficiently manage notes, schedules, and workflows. It delivers a consistent, responsive experience across both desktop and mobile devices.",
+        "Hero App is a productivity app with a sleek UI and seamless navigation, allowing users to efficiently manage notes, schedules, and workflows on both desktop and mobile.",
       skills: ["ReactJs", "HTML", "Javascript", "Tailwind"],
       liveLink: "https://react-hero-apps-store-bd.netlify.app/",
       githubLink: "https://github.com/tamim127/react-hero-app.git",

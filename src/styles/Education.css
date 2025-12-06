@@ -1,0 +1,139 @@
+.education-section {
+
+  padding: 8rem 3rem;
+  position: relative;
+  z-index: 2;
+
+}
+
+.contactGrad {
+  background: linear-gradient(
+    rgb(0, 0, 0),
+    rgba(8, 8, 8, 0.8),
+    rgba(8, 8, 8, 0.75),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    black
+  );
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.education-title {
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+
+  letter-spacing: 1px;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+.edu-card {
+  width: 320px;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: 0.4s;
+}
+
+.edu-card:hover {
+  transform: scale(1.05);
+  border-color: #ff7c51;
+  box-shadow: 0 0 45px rgba(255, 122, 81, 0.4);
+}
+
+.edu-card::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(
+    130deg,
+    rgba(75, 181, 255, 0.4),
+    rgba(255, 111, 145, 0.4)
+  );
+  top: -40%;
+  left: -40%;
+  filter: blur(40px);
+  z-index: -1;
+  animation: eduGlow 6s infinite ease-in-out;
+}
+
+@keyframes eduGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.edu-card h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+}
+
+.institute {
+  opacity: 0.85;
+  margin-bottom: 0.4rem;
+}
+
+.session {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.result {
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: #ffd2ff;
+}
+
+@media (max-width: 900px) {
+  .education-title {
+    font-size: 2.2rem;
+  }
+
+  .edu-card {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .education-section {
+    padding: 6rem 1.5rem;
+  }
+}

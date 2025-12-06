@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./hooks/useScrollToTop";
 import "./styles/App.css";
+import Education from "./components/Education";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
       </div>
       <Projects />
       <Skills />
+      <Education/>
       <Contact />
       <Footer />
     </div>

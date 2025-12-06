@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Navbar.css";
-import profileImg from "../../userAsset/Vprofile-c.png"
+import profileImg from "../../userAsset/Vprofile-c.png";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,6 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      {/* Logo */}
       <a href="/" target="_blank" rel="noopener noreferrer">
         <div className="logo-container">
           <img src={profileImg} className="logo" alt="Logo" />
@@ -27,10 +28,29 @@ const Navbar = () => {
         </div>
       </a>
 
+      {/* Desktop Navbar Items */}
       <div className="nav-items">
+        <div className="nav-item">
+          <a
+            href="#hero-section"
+            onClick={(e) => handleNavClick(e, "#hero-section")}
+          >
+            Home
+          </a>
+        </div>
         <div className="nav-item">
           <a href="#projects" onClick={(e) => handleNavClick(e, "#projects")}>
             Projects
+          </a>
+        </div>
+        <div className="nav-item">
+          <a href="#skills" onClick={(e) => handleNavClick(e, "#skills")}>
+            About Me
+          </a>
+        </div>
+        <div className="nav-item">
+          <a href="#education" onClick={(e) => handleNavClick(e, "#education")}>
+            Education
           </a>
         </div>
         <div className="nav-item">
@@ -45,6 +65,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Social Icons + Mobile Menu Button */}
       <div className="nav-links">
         <a
           href="https://github.com/tamim127"
@@ -56,6 +77,7 @@ const Navbar = () => {
             className="fa-brands fa-github nav-icon"
           ></i>
         </a>
+
         <a
           href="https://in.linkedin.com/in/md-tamiul-alam"
           target="_blank"
@@ -66,6 +88,7 @@ const Navbar = () => {
             className="fa-brands fa-linkedin nav-icon"
           ></i>
         </a>
+
         <a
           href="https://x.com/EishatTamim70"
           target="_blank"
@@ -86,10 +109,24 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="mobile-menu">
+          <a
+            href="#hero-section"
+            onClick={(e) => handleNavClick(e, "#hero-section")}
+          >
+            Home
+          </a>
+
           <a href="#projects" onClick={(e) => handleNavClick(e, "#projects")}>
             Projects
+          </a>
+          <a href="#skills" onClick={(e) => handleNavClick(e, "#skills")}>
+            About Me
+          </a>
+          <a href="#education" onClick={(e) => handleNavClick(e, "#education")}>
+            Education
           </a>
           <a href="#skills" onClick={(e) => handleNavClick(e, "#skills")}>
             Skills
