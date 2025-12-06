@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Navbar.css";
+import profileImg from "../../userAsset/Vprofile-c.png"
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     <nav className="navbar">
       <a href="/" target="_blank" rel="noopener noreferrer">
         <div className="logo-container">
-          <img src="../../userAsset/Vprofile-c.png" className="logo" alt="Logo" />
+          <img src={profileImg} className="logo" alt="Logo" />
           <div className="logo-text">Tamiul Alam</div>
         </div>
       </a>

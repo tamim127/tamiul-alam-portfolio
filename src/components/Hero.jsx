@@ -3,6 +3,8 @@ import Typed from "typed.js";
 import { gsap } from "gsap";
 import "../styles/Hero.css";
 import Swal from "sweetalert2";
+import heroVideo from "../../stack/blackHoleee-2.webm"
+
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -119,7 +121,7 @@ const Hero = () => {
     <div className="hero" id="hero-section" ref={heroRef}>
       <div className="space ">
         <video autoPlay muted loop>
-          <source src="/stack/blackHoleee-2.webm" type="video/webm" />
+          <source src={heroVideo} type="video/webm" />
         </video>
       </div>
 

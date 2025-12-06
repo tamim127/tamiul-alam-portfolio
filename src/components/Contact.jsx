@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/Contact.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import chatImg from "../../stack/chat.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,8 +23,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    
-
     // EmailJS integration
     emailjs
       .send(
@@ -34,7 +33,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          Swal.close(); 
+          Swal.close();
           Swal.fire({
             icon: "success",
             title: "Message Sent!",
@@ -68,7 +67,7 @@ const Contact = () => {
 
           <div className="lower">
             <div className="left_img">
-              <img src="./stack/chat.png" alt="chat" />
+              <img src={chatImg} alt="chat" />
             </div>
 
             <div className="right">
