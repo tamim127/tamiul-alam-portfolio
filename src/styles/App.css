@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.outerSectionDiv {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.absolute {
+  position: absolute;
+}

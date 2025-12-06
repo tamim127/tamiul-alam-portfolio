@@ -1,0 +1,142 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.134);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.logo {
+  width: 28px;
+  margin: 0 0.7rem;
+  border-radius: 100px;
+  filter: drop-shadow(0px 0px 12px #e8ab03);
+}
+
+.logo-text {
+  color: rgba(243, 244, 238, 0.707);
+}
+
+.logo-text:hover {
+  color: rgba(246, 230, 230, 0.858);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.178);
+  border: 1px solid rgba(0, 0, 0, 0.375);
+  backdrop-filter: blur(11px);
+  height: 35px;
+  width: 550px;
+  align-items: center;
+  border-radius: 16px;
+  padding: 0 3.4rem;
+}
+
+.nav-item a {
+  cursor: pointer;
+  position: relative;
+  font-size: 1rem;
+  color: rgba(241, 242, 238, 0.677);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: rgba(246, 230, 230, 0.858);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+  gap: 1.5rem;
+}
+
+.nav-icon {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.819);
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.nav-icon:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(0.9);
+  filter: drop-shadow(0px 0px 7px #ffffff);
+}
+
+.nav-icon:active {
+  transform: scale(0.8);
+}
+
+.hamburger-icon {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 200px;
+  z-index: 9;
+}
+
+@media (max-width: 900px) {
+  .nav-items {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1rem 0.5rem;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    color: rgba(241, 242, 238, 0.677);
+    padding: 0.5rem;
+  }
+
+  .mobile-menu a:hover {
+    color: rgba(246, 230, 230, 0.858);
+  }
+}

@@ -1,0 +1,151 @@
+.contactSection {
+  background-image: url(/stack/connect.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contactGrad {
+  background: linear-gradient(
+    rgb(0, 0, 0),
+    rgba(8, 8, 8, 0.8),
+    rgba(8, 8, 8, 0.75),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    black
+  );
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.upper {
+  padding-bottom: 3rem;
+  color: rgb(235, 196, 247);
+  text-shadow: 0 0 10px #a101a1, 0 0 20px #a002a0, 0 0 40px #a802a8;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.upper p {
+  font-weight: 300;
+  display: inline-block;
+}
+
+.upper h3 {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.lower {
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 8rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.left_img > img {
+  width: 80%;
+}
+
+.right > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(11px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 60px rgba(8, 7, 16, 0.662);
+  border-radius: 20px;
+  padding: 12px;
+  min-width: 500px;
+}
+
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: solid 1px rgb(165, 165, 165);
+  padding: 5px 9px;
+  min-width: 100%;
+  min-height: 40px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: white;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(238, 181, 245);
+}
+
+::placeholder {
+  color: #e5e5e5d6;
+}
+
+.send-btn {
+  font-size: 16px;
+  background-image: linear-gradient(135deg, #7b4397, #dc2430);
+  color: rgb(235, 181, 245);
+  border: 2px solid rgb(238, 181, 245);
+  padding: 0.5rem 1.3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.send-btn span {
+  margin-left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn svg {
+  display: block;
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+
+.send-btn:hover svg {
+  transform: translateX(1.2rem) rotate(45deg) scale(1.2);
+}
+
+.send-btn:hover span {
+  transform: translateX(5rem);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 900px) {
+  .upper {
+    font-size: 40px;
+  }
+
+  .left_img {
+    display: none;
+  }
+
+  .right > form {
+    min-width: 80vw;
+    max-width: 450px;
+  }
+}
